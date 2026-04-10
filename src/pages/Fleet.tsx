@@ -16,6 +16,7 @@ import {
 import FleetMap from '@/components/FleetMap';
 import Vehicle360View from '@/components/Vehicle360View';
 import VehicleList from '@/components/VehicleList';
+import GeofenceManager from '@/components/GeofenceManager';
 import { mockVehicles } from '@/data/mockVehicles';
 import { Vehicle } from '@/types/vehicle';
 
@@ -220,36 +221,13 @@ export default function Fleet() {
             <Card>
               <CardHeader>
                 <CardTitle>Geofence Management</CardTitle>
-                <CardDescription>Manage zones and boundaries for fleet monitoring</CardDescription>
+                <CardDescription>Create and manage zones and boundaries for fleet monitoring</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4">
-                  <Button>
-                    <MapPin className="h-4 w-4 mr-2" />
-                    Create New Geofence
-                  </Button>
-                  <div className="space-y-2">
-                    <div className="p-4 border rounded-lg">
-                      <div className="flex justify-between items-start">
-                        <div>
-                          <h4 className="font-semibold">Downtown Delivery Zone</h4>
-                          <p className="text-sm text-muted-foreground">Radius: 5 km</p>
-                        </div>
-                        <div className="text-sm text-muted-foreground">3 vehicles inside</div>
-                      </div>
-                    </div>
-                    <div className="p-4 border rounded-lg">
-                      <div className="flex justify-between items-start">
-                        <div>
-                          <h4 className="font-semibold">Warehouse Area</h4>
-                          <p className="text-sm text-muted-foreground">Radius: 2 km</p>
-                        </div>
-                        <div className="text-sm text-muted-foreground">1 vehicle inside</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <GeofenceManager />
               </CardContent>
+            </Card>
+          </TabsContent>
             </Card>
           </TabsContent>
 
