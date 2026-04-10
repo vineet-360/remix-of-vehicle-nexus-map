@@ -3,7 +3,7 @@ import { Vehicle, VehicleStatus } from '@/types/vehicle';
 import { mockVehicles } from '@/data/mockVehicles';
 import VehicleList from '@/components/VehicleList';
 import FleetMap from '@/components/FleetMap';
-import DashboardStats from '@/components/DashboardStats';
+
 
 const MAPBOX_TOKEN = 'pk.eyJ1IjoidmluZWV0MDE5IiwiYSI6ImNtYzIyNG9rOTAzbnYyanE1a2dweGZ3azQifQ.NQ6QssrC2iQzgb-tLdMLDw';
 
