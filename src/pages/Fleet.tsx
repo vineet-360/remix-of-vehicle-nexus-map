@@ -228,8 +228,6 @@ export default function Fleet() {
               </CardContent>
             </Card>
           </TabsContent>
-            </Card>
-          </TabsContent>
 
           <TabsContent value="notifications" className="mt-4">
             <Card>
