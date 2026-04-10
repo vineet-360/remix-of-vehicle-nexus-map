@@ -35,7 +35,7 @@ const VehicleList = ({
   };
 
   return (
-    <div className="h-full flex flex-col bg-card border-l border-border">
+    <div className="h-full flex flex-col bg-card">
       <div className="p-4 border-b border-border bg-card">
         <h2 className="text-xl font-bold text-card-foreground mb-4">Fleet Overview</h2>
         
