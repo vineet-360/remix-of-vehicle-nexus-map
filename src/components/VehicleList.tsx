@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Vehicle, VehicleStatus } from '@/types/vehicle';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -5,7 +6,8 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/component
 import StatusBadge from './StatusBadge';
 import { cn } from '@/lib/utils';
 import { formatDistanceToNow } from 'date-fns';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Plus } from 'lucide-react';
+import AddVehicleDialog from './AddVehicleDialog';
 
 interface VehicleListProps {
   vehicles: Vehicle[];
@@ -22,6 +24,7 @@ const VehicleList = ({
   filterStatus,
   onFilterChange,
 }: VehicleListProps) => {
+  const [addVehicleOpen, setAddVehicleOpen] = useState(false);
   const filteredVehicles =
     filterStatus === 'all'
       ? vehicles
@@ -37,7 +40,12 @@ const VehicleList = ({
   return (
     <div className="h-full flex flex-col bg-card">
       <div className="p-4 border-b border-border bg-card">
-        <h2 className="text-xl font-bold text-card-foreground mb-4">Fleet Overview</h2>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-xl font-bold text-card-foreground">Fleet Overview</h2>
+          <Button size="sm" variant="outline" onClick={() => setAddVehicleOpen(true)}>
+            <Plus className="h-4 w-4" />
+          </Button>
+        </div>
         
         <div className="grid grid-cols-2 gap-2 mb-4">
           <Button
@@ -133,6 +141,7 @@ const VehicleList = ({
           </Collapsible>
         ))}
       </div>
+      <AddVehicleDialog open={addVehicleOpen} onOpenChange={setAddVehicleOpen} />
     </div>
   );
 };
