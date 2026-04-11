@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Vehicle, VehicleStatus } from '@/types/vehicle';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -5,7 +6,8 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/component
 import StatusBadge from './StatusBadge';
 import { cn } from '@/lib/utils';
 import { formatDistanceToNow } from 'date-fns';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Plus } from 'lucide-react';
+import AddVehicleDialog from './AddVehicleDialog';
 
 interface VehicleListProps {
   vehicles: Vehicle[];

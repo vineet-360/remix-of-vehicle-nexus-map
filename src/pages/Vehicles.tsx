@@ -640,6 +640,8 @@ export default function Vehicles() {
           </div>
         </DialogContent>
       </Dialog>
+
+      <AddVehicleDialog open={addVehicleOpen} onOpenChange={setAddVehicleOpen} />
     </div>
   );
 }
