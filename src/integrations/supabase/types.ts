@@ -50,6 +50,57 @@ export type Database = {
         }
         Relationships: []
       }
+      vehicles: {
+        Row: {
+          created_at: string
+          driver: string | null
+          fuel_type: string | null
+          id: string
+          identifier: string
+          make: string | null
+          model: string | null
+          name: string
+          plate_number: string | null
+          status: string
+          updated_at: string
+          vehicle_type: string | null
+          vin: string | null
+          year: number | null
+        }
+        Insert: {
+          created_at?: string
+          driver?: string | null
+          fuel_type?: string | null
+          id?: string
+          identifier: string
+          make?: string | null
+          model?: string | null
+          name: string
+          plate_number?: string | null
+          status?: string
+          updated_at?: string
+          vehicle_type?: string | null
+          vin?: string | null
+          year?: number | null
+        }
+        Update: {
+          created_at?: string
+          driver?: string | null
+          fuel_type?: string | null
+          id?: string
+          identifier?: string
+          make?: string | null
+          model?: string | null
+          name?: string
+          plate_number?: string | null
+          status?: string
+          updated_at?: string
+          vehicle_type?: string | null
+          vin?: string | null
+          year?: number | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
