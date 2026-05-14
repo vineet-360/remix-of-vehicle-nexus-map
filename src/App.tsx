@@ -14,6 +14,7 @@ import Maintenance from "./pages/Maintenance";
 import Reports from "./pages/Reports";
 import Finance from "./pages/Finance";
 import Settings from "./pages/Settings";
+import System from "./pages/System";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
@@ -37,6 +38,7 @@ const App = () => (
               <Route path="/reports" element={<Reports />} />
               <Route path="/finance" element={<Finance />} />
               <Route path="/settings" element={<Settings />} />
+              <Route path="/system" element={<System />} />
               <Route path="/profile" element={<Profile />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

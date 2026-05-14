@@ -8,6 +8,7 @@ import {
   FileText,
   DollarSign,
   Settings,
+  ShieldCheck,
   User,
   LogOut } from
 "lucide-react";
@@ -37,7 +38,8 @@ const menuItems = [
 { title: "Maintenance", url: "/maintenance", icon: Wrench },
 { title: "Reports", url: "/reports", icon: FileText },
 { title: "Finance", url: "/finance", icon: DollarSign },
-{ title: "Settings", url: "/settings", icon: Settings }];
+{ title: "Settings", url: "/settings", icon: Settings },
+{ title: "System", url: "/system", icon: ShieldCheck }];
 
 
 export function AppSidebar() {

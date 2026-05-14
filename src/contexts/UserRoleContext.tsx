@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
-export type UserRole = 'fleet_manager' | 'operations_manager' | 'driver' | 'maintenance_staff' | 'finance';
+export type UserRole = 'admin' | 'fleet_manager' | 'operations_manager' | 'driver' | 'maintenance_staff' | 'finance';
 
 interface UserRoleContextType {
   role: UserRole;
@@ -36,6 +36,7 @@ export function useUserRole() {
 }
 
 export const rolePermissions: Record<UserRole, string[]> = {
+  admin: ['/', '/fleet', '/trips', '/drivers', '/vehicles', '/maintenance', '/reports', '/finance', '/settings', '/profile', '/system'],
   fleet_manager: ['/', '/fleet', '/trips', '/drivers', '/vehicles', '/maintenance', '/reports', '/finance', '/settings', '/profile'],
   operations_manager: ['/', '/fleet', '/trips', '/drivers', '/vehicles', '/maintenance', '/reports', '/profile'],
   driver: ['/', '/trips', '/vehicles', '/profile', '/settings'],
