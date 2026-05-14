@@ -14,6 +14,7 @@ import Maintenance from "./pages/Maintenance";
 import Reports from "./pages/Reports";
 import Finance from "./pages/Finance";
 import Settings from "./pages/Settings";
+import System from "./pages/System";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
