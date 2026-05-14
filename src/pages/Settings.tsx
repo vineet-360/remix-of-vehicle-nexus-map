@@ -33,7 +33,7 @@ export default function Settings() {
       </div>
 
       <Tabs defaultValue="profile" className="space-y-6">
-        <TabsList className="grid grid-cols-4 lg:grid-cols-8 w-full">
+        <TabsList className="grid grid-cols-3 lg:grid-cols-9 w-full">
           <TabsTrigger value="profile"><User className="w-4 h-4 mr-2" />Profile</TabsTrigger>
           <TabsTrigger value="security"><Shield className="w-4 h-4 mr-2" />Security</TabsTrigger>
           <TabsTrigger value="notifications"><Bell className="w-4 h-4 mr-2" />Notifications</TabsTrigger>
@@ -42,6 +42,7 @@ export default function Settings() {
           <TabsTrigger value="integrations"><Plug className="w-4 h-4 mr-2" />Integrations</TabsTrigger>
           <TabsTrigger value="team"><Users className="w-4 h-4 mr-2" />Team</TabsTrigger>
           <TabsTrigger value="compliance"><FileCheck className="w-4 h-4 mr-2" />Compliance</TabsTrigger>
+          <TabsTrigger value="cybershield"><ShieldAlert className="w-4 h-4 mr-2" />CyberShield</TabsTrigger>
         </TabsList>
 
         <TabsContent value="profile" className="space-y-4">
