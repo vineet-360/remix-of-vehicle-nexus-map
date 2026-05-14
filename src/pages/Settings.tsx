@@ -83,7 +83,8 @@ export default function Settings() {
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="fleet_manager">Fleet Manager / Admin</SelectItem>
+                  <SelectItem value="admin">Admin (System Access)</SelectItem>
+                  <SelectItem value="fleet_manager">Fleet Manager</SelectItem>
                   <SelectItem value="operations_manager">Operations Manager</SelectItem>
                   <SelectItem value="driver">Driver</SelectItem>
                   <SelectItem value="maintenance_staff">Maintenance Staff</SelectItem>
