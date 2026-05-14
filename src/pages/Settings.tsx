@@ -7,9 +7,10 @@ import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
-import { User, Shield, Bell, Palette, Building2, Plug, Users, FileCheck } from "lucide-react";
+import { User, Shield, Bell, Palette, Building2, Plug, Users, FileCheck, ShieldAlert } from "lucide-react";
 import { useUserRole, UserRole } from "@/contexts/UserRoleContext";
 import { toast } from "sonner";
+import CyberShieldMonitor from "@/components/CyberShieldMonitor";
 
 export default function Settings() {
   const { role, setRole } = useUserRole();
