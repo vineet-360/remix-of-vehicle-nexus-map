@@ -332,6 +332,10 @@ export default function Settings() {
             </CardContent>
           </Card>
         </TabsContent>
+
+        <TabsContent value="cybershield" className="space-y-4">
+          <CyberShieldMonitor />
+        </TabsContent>
       </Tabs>
     </div>
   );
