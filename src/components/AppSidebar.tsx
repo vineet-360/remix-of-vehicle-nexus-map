@@ -8,6 +8,7 @@ import {
   FileText,
   DollarSign,
   Settings,
+  ShieldCheck,
   User,
   LogOut } from
 "lucide-react";
