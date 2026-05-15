@@ -15,6 +15,7 @@ import Reports from "./pages/Reports";
 import Finance from "./pages/Finance";
 import Settings from "./pages/Settings";
 import System from "./pages/System";
+import CyberShield from "./pages/CyberShield";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
@@ -39,6 +40,7 @@ const App = () => (
               <Route path="/finance" element={<Finance />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="/system" element={<System />} />
+              <Route path="/cybershield" element={<CyberShield />} />
               <Route path="/profile" element={<Profile />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

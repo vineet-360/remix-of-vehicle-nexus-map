@@ -36,7 +36,7 @@ export function useUserRole() {
 }
 
 export const rolePermissions: Record<UserRole, string[]> = {
-  admin: ['/', '/fleet', '/trips', '/drivers', '/vehicles', '/maintenance', '/reports', '/finance', '/settings', '/profile', '/system'],
+  admin: ['/', '/fleet', '/trips', '/drivers', '/vehicles', '/maintenance', '/reports', '/finance', '/settings', '/profile', '/system', '/cybershield'],
   fleet_manager: ['/', '/fleet', '/trips', '/drivers', '/vehicles', '/maintenance', '/reports', '/finance', '/settings', '/profile'],
   operations_manager: ['/', '/fleet', '/trips', '/drivers', '/vehicles', '/maintenance', '/reports', '/profile'],
   driver: ['/', '/trips', '/vehicles', '/profile', '/settings'],
